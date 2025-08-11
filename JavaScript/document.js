@@ -1855,3 +1855,69 @@ console.log(listElem.childElementCount); // تعداد فرزند های الم�
 console.log(listElem.firstElementChild);
 console.log(listElem.lastElementChild);
 console.log(listElem.hasChildNodes()); // Bool
+
+
+// * OnSelect(input,textarea)
+// میشه تنظیم کرد وقتی فردی متنی رو انتخاب میکنه اتفاقی بیوفته
+const input = document.querySelector("input");
+const textarea = document.querySelector("textarea");
+
+input.addEventListener("select", () => {
+  console.log("selected");
+});
+
+textarea.addEventListener("select", () => {
+  console.log("selected");
+});
+
+// * DblClick(all elements)
+// دابل کلیک
+const btn = document.querySelector("button");
+
+btn.addEventListener("dblclick", (event) => {
+  console.log("Dubble clicked");
+  console.log(event);
+});
+
+
+//* clipboard events(copy,paste,cut)
+//!(cancelable)
+
+textarea.addEventListener('copy', () => {
+   console.log('copy');
+   
+})
+textarea.addEventListener('cut', () => {
+   console.log('cut');
+   
+})
+textarea.addEventListener('paste', () => {
+   console.log('paste');
+   
+})
+
+
+//* Oncontextmenu event
+// به راست کلیک کاربر میشه دسترسی پیدا کرد
+document.addEventListener("contextmenu", (event) => {
+   event.preventDefault();//! برای خاموش کردن راست کلیک
+   console.log(event);
+ });
+ 
+
+ //* OnLoad and DOMContentLoaded
+// هردو برای نشون دادن اینکه سایت لود شده استفاده میشن
+//? Onload نمیشه تو خود فایل جی اس صداش زد باید داخل خود اچ تی ام ال صدا زده بشه
+//? وقتی که کل سند لود شده باشه اجرا میشه
+
+//? DOMContentLoaded میشه تو خود فایلر جی اس فراخوانی بشه
+//? وقتی که محتوای دام یعنی تگ بادی لود بشه اجرا میشه
+
+const loadSite = () => {
+   console.log("site loaded");
+ };
+ 
+ document.addEventListener("DOMContentLoaded", () => {
+   console.log("DOMContentLoaded");
+ });
+ 
