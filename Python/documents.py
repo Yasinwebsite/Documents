@@ -122,9 +122,35 @@
 # ==, <, >, <=, >=, !=
 
 # تمرین
-a=int(input("Enter number1: "))
-b=int(input("Enter number2: "))
-c=int(input("Enter number3: "))
+# a=int(input("Enter number1: "))
+# b=int(input("Enter number2: "))
+# c=int(input("Enter number3: "))
+# print(a<b<c)
 
-print(a<b<c)
 
+
+# Statements
+
+# sen = 16
+
+# if sen < 18:
+#    print('salam bache')
+# elif sen < 40:
+#    print('salam miansal')
+# else :
+#    print('salam mosen')
+
+# تمرین سبد خرید
+
+price = int(input('mablagh kharid ra vared konid'))
+final_price = None
+
+if price > 50000:
+   final_price = price * (1 - 20 / 100)
+elif 50000 > price > 20000:
+   final_price = price * (1 - 10 / 100)
+else:
+   final_price = price
+
+
+print(final_price)
