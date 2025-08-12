@@ -1921,3 +1921,29 @@ const loadSite = () => {
    console.log("DOMContentLoaded");
  });
  
+
+
+ 
+
+ //* OnScroll
+// میشه فهمید کاربر اسکرول کرده
+document.addEventListener('scroll', () => {
+   console.log('scroll');
+   
+})
+
+console.log(document.documentElement.scrollTop);
+// نشون میده کاربر از بالا چقدر اسکرول کرده
+console.log(document.documentElement.scrollLeft);
+// نشون میده کاربر چقدر اسکرول افقی کرده
+
+const Btn = document.querySelector('button')
+
+const scrollHandler = () => {
+   document.documentElement.scrollTo(0,0)
+   // این متد برای این استافاده میشه که کاربر رو به این مکان از اسکرول ببره و واحد ها بر حسب پیکسل هستند
+   document.documentElement.scrollBy(0,100)
+   // فرق این متد با قبلی این هست که این باعث میشه به اندازه ورودی به اسکرول کاربر اضافه بشه
+}
+
+Btn.addEventListener('click', scrollHandler)
