@@ -154,3 +154,35 @@ else:
 
 
 print(final_price)
+
+
+
+
+# Loops
+
+# for
+
+# my_list = [1, 2, 3, 4, 6, 10]
+# even_numbers = []
+# odd_numbers = []
+
+# for list_item in my_list:
+#    print(list_item) #هر سری که حلقه اجرا میشه یه ایتم از لیست رو پرینت میکنه
+   
+#    if list_item % 2 == 0:
+#       even_numbers.append(list_item)
+#    else:
+#       odd_numbers.append(list_item)
+
+
+
+# print(f'Even numbers: \n{even_numbers}')
+# print(f'Odd numbers: \n{odd_numbers}')
+
+
+# Unpacking in js
+
+people = {'amirali': (16,180), 'amir': (16,183)}
+
+for sen, ghad in people.values():
+   print(sen,ghad)
