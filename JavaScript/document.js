@@ -1947,3 +1947,15 @@ const scrollHandler = () => {
 }
 
 Btn.addEventListener('click', scrollHandler)
+
+
+
+//* Media (Audio - Video)
+
+const music = document.querySelector('audio')
+
+// music.play()
+// music.pause()
+// music.duration( مدت زمان اهنگ بر حسب ثانیه)
+// music.currentTime(زمان سپری شده)
+// music.playbackRate(سرعت پخش)
