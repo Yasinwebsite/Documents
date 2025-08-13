@@ -240,3 +240,37 @@ while n < 200:
       print('hip')
       continue
    print(n)
+
+
+   # List Comprehation
+
+# میشه بجای این کار
+list = [1, 2, 3, 4]
+
+# list_2 = []
+# for list_item in list:
+#    list_2.append(list_item * 2)
+# print(list_2)
+
+# # این کار رو بکنیم که حرفه ای تر و خلاصه تره
+# list_2 = [list_item * 2 for list_item in list]
+# print(list_2)
+
+
+
+# همین ترفند تو شرط ها
+# a = 6
+
+# resault = ('fard' if a % 2 != 0 else 'zoje')
+# print(resault)
+
+
+# اگر بخوایم لیستی بسازیم که از لیست قبلی عدد های زوجش رو به ما بده
+
+# list_2 = [n for n in list if n % 2 == 0]
+# print(list_2)
+
+#  یا اینکه به ازای هر عنصر لیست بگه زوجه یا فرد
+
+# list_2 = ['zoje' if n % 2 == 0 else 'fard' for n in list]
+# print(list_2)
