@@ -162,27 +162,81 @@ print(final_price)
 
 # for
 
-# my_list = [1, 2, 3, 4, 6, 10]
-# even_numbers = []
-# odd_numbers = []
+list = [1, 2, 3, 4, 6, 10]
+even_numbers = []
+odd_numbers = []
 
-# for list_item in my_list:
-#    print(list_item) #هر سری که حلقه اجرا میشه یه ایتم از لیست رو پرینت میکنه
+for list_item in list:
+   print(list_item) #هر سری که حلقه اجرا میشه یه ایتم از لیست رو پرینت میکنه
    
-#    if list_item % 2 == 0:
-#       even_numbers.append(list_item)
-#    else:
-#       odd_numbers.append(list_item)
+   if list_item % 2 == 0:
+      even_numbers.append(list_item)
+   else:
+      odd_numbers.append(list_item)
 
 
 
-# print(f'Even numbers: \n{even_numbers}')
-# print(f'Odd numbers: \n{odd_numbers}')
+print(f'Even numbers: \n{even_numbers}')
+print(f'Odd numbers: \n{odd_numbers}')
 
 
-# Unpacking in js
+Unpacking in js
 
 people = {'amirali': (16,180), 'amir': (16,183)}
 
 for sen, ghad in people.values():
    print(sen,ghad)
+
+
+# While
+# تا زمانی که یه شرطی برقرار باشه دستورات اجرا میشن
+a = 0
+
+print('im starting')
+
+while a <= 5:
+   print(f'a is {a}')
+   a += 1
+print('finished')
+
+# مسئله مشهور «مسئله کولاچ» (Collatz conjecture)
+
+number = int(input('Adad  ra vared konid: '))
+
+while number != 1:
+   print(number)
+   if number % 2 == 0:
+      number = number // 2
+   else:
+      number =  (number * 3) + 1
+
+print(1)
+
+# دستور هایی برای خارج شدن از حلقه
+
+for item in [1, 2, 3]:
+   if item == 2:
+      # pass
+      # break
+      # بهش برسه لوپ میشکنه
+      continue
+      # باعث میشه دستورات بعد از این کلمه اجرا نشن و لوپ دوباره از اول با ایتم بعدی اجرا بشه
+   print(item)
+
+
+# تمرین برسی بخش پذیری اعداد به سبک باری هوپ
+
+n = 0
+
+while n < 200:
+   n += 1
+   if (n % 3 == 0) and (n % 5 == 0):
+      print('hiphop')
+      continue
+   if n % 3 == 0:
+      print('hope')
+      continue
+   if n % 5 == 0:
+      print('hip')
+      continue
+   print(n)
