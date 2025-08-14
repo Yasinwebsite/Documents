@@ -274,3 +274,43 @@ list = [1, 2, 3, 4]
 
 # list_2 = ['zoje' if n % 2 == 0 else 'fard' for n in list]
 # print(list_2)
+
+
+
+
+
+
+
+# enumerate
+
+list = ['amir', 'jadi', 'ali', 'sarah']
+
+for list, a in enumerate(list):
+   # متد بالا میاد اجزای یک لیست رو به صورت ایندکسی برمیگردونه و یجورایی شماره گذاری میکنه
+   print(list, a)
+
+
+
+# zip
+name = ['amir', 'soroosh']
+family = ['borji', 'mehr']
+
+for i in zip(name, family):
+   # دقیقا همون کاری رو میکنه که زیپ لباس انجام میده
+   print(i)
+
+
+# in
+
+names = ['amir', 'ali', 'jadi']
+
+people = {
+   'amir': {'sen': 16, 'ghad': 180},
+   'jadi': {'sen': 45, 'ghad': 180}
+}
+
+for name in names:
+   if name in people:
+      print(f'{name} is {people[name]['sen']} and his height is {people[name]['ghad']}')
+   else:
+      print(f'i have no data for {name}')
