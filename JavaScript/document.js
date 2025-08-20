@@ -1990,3 +1990,7 @@ const dragStartHandler = (event) => {
    event.preventDefault();
    // حتما باید این کار انجام بشه تا ایونت دراپ اجرا بشه
  };
+
+//  * کل ایونت هایی که در طول درگ اند دراپ کردن اتفاق میوفتند
+//* Dragged -> onDragStart onDrag onDragEnd
+//* Drapped -> onDragEnter onDragOver onDragLeave onDrop
