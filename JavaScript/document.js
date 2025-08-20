@@ -1959,3 +1959,34 @@ const music = document.querySelector('audio')
 // music.duration( مدت زمان اهنگ بر حسب ثانیه)
 // music.currentTime(زمان سپری شده)
 // music.playbackRate(سرعت پخش)
+
+//* Drag - Drop
+
+/* <h1 draggable="true" ondragstart="dragStartHandler(event)" id="React">React</h1>
+<h1 draggable="true" ondragstart="dragStartHandler(event)" id="Vue">Vue</h1>
+<h1 draggable="true" ondragstart="dragStartHandler(event)" id="Angular">Angular</h1>
+
+<br>
+<br>
+
+<div ondrop="dropHandler(event)" ondragover="dragOverHandler(event)" class="drop-box"></div> */
+
+
+const dragStartHandler = (event) => {
+   event.dataTransfer.setData("elementId", event.target.id);
+   // ایدی المنتی که درگ کردیم رو به دیتا ترنسفر ارسال میکنیم
+ };
+ 
+ const dropHandler = (event) => {
+   const elementId = event.dataTransfer.getData("elementId");
+   // دیتایی که ارسال کرده بودیم رو از دیتا ترنسفر میگیریم
+   const targetElement = document.getElementById(elementId);
+   // و اون المنتی رو که درگ کرده بودیم و الان دراپ کردیم روی همین المنت رو پیدا میکنیم
+   event.target.append(targetElement);
+   // و به المنتی روش دراپ کردیم اضافه میکنیم
+ };
+ 
+ const dragOverHandler = (event) => {
+   event.preventDefault();
+   // حتما باید این کار انجام بشه تا ایونت دراپ اجرا بشه
+ };
