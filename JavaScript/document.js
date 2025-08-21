@@ -1994,3 +1994,30 @@ const dragStartHandler = (event) => {
 //  * کل ایونت هایی که در طول درگ اند دراپ کردن اتفاق میوفتند
 //* Dragged -> onDragStart onDrag onDragEnd
 //* Drapped -> onDragEnter onDragOver onDragLeave onDrop
+
+
+
+//* localStorage
+
+<button onclick="setDataDark()">set Data Dark</button>
+<button onclick="getItem()">get data</button>
+<button onclick="removeData()">remove data</button>
+<button onclick="clearAllData()">clear all data</button>
+
+const setDataDark = () => {
+   localStorage.setItem("theme", "dark");
+   // اولی برای ست کردن کلید و دومی برای ست کرد ولیو
+ };
+ 
+ const getItem = () => {
+   console.log(localStorage.getItem("theme"));
+ };
+ 
+ const removeData = () => {
+   localStorage.removeItem('theme')
+ }
+ 
+ const clearAllData = () => {
+   localStorage.clear()
+ }
+ 
