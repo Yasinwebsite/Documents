@@ -49,7 +49,7 @@ console.log(typeof boolnumber)
 
 let age = +prompt("Please enter your age", "18") 
 
-alert(`You are ${age} years old!`)
+alert(`You are ${age} years old!')
 
 // عملیات های ریاضی
 
@@ -115,6 +115,22 @@ alert(finalprice)
 
 let num1 = 12
 let num2 = 10
+
+//تفاوت عملگر == با ===
+
+// let a = 12
+//let b = 12
+let sum = a==b
+//یعنی داخل متغیر ها باهم برابرند در عملگر ==
+
+/------------------------------- ---------------------
+
+//حالا عملگر === 
+//یعنی در این عملگر نوع و داده های داخلشون باهم برابرند
+
+
+
+
 
 console.log(num1 == num2)
 console.log(num2 == "12")
@@ -198,7 +214,8 @@ let grade = +prompt("لطفا نمره را وارد کنید")
 
 if (grade > 20){
     alert("عدد صحیح نمیباشد")
-} else{
+} 
+    else{
     if(grade >= 15){
         alert("A")
     } else if(grade >= 12){
@@ -595,7 +612,7 @@ for (let i = 0; i <= 100; i +=2) {
 // تمرین محاسیه مبلغ کل سبد خرید
 
 let currentPrice;
-let sum = 0
+let sum = 0;
 
 for(i = 1; i <= 5; i++){
    currentPrice = +prompt("لطفا مبلغ محصول" + i + "ام را وارد نمایید")
